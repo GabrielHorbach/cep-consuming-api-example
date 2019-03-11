@@ -100,8 +100,14 @@
             $inputEstado.value="";
             $inputLogradouro.value="";
         }
+
+        return {
+            getMessage: getMessage,
+            clearData: clearData
+        }
     }
 
+    window.app = app();
     app();
 
 })(document);
